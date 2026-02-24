@@ -52,10 +52,10 @@ const items = [
 
 // Future Visions Data
 const futureVisions = [
-  { id: "shopping", title: "Centro Comercial", desc: "Explore lojas de cosméticos e restaurantes. Onde o consumo e a saúde mental se cruzam.", status: "Em Design", icon: "🛍️" },
+  { id: "shopping", title: "Centro Comercial", desc: "Explore lojas de cosméticos e restaurantes. Onde o consumo e a saúde mental se cruzam.", status: "Em Planejamento", icon: "🛍️" },
   { id: "jobs", title: "Sistema de Trabalho", desc: "Comece servindo café e construa sua independência financeira para sobreviver ao vazio.", status: "Em Planejamento", icon: "☕" },
-  { id: "personality", title: "Personalidade & Hobbies", desc: "Defina os gostos e hábitos de Leah. Cada escolha molda quem ela se tornará.", status: "Em Conceito", icon: "🧠" },
-  { id: "wardrobe", title: "Guarda-Roupa", desc: "Lojas de roupas e customização visual. A aparência como reflexo da alma.", status: "Planejado", icon: "👗" }
+  { id: "personality", title: "Personalidade & Hobbies", desc: "Defina os gostos e hábitos de Leah. Cada escolha molda quem ela se tornará.", status: "Em Planejamento", icon: "🧠" },
+  { id: "wardrobe", title: "Guarda-Roupa", desc: "Lojas de roupas e customização visual. A aparência como reflexo da alma.", status: "Em Planejamento", icon: "👗" }
 ];
 
 // Gallery Data
