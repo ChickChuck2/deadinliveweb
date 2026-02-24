@@ -450,7 +450,7 @@ section.visible {
 .map-bg {
   position: absolute;
   inset: 0;
-  background: url('images/game/map.png');
+  background: url('/images/game/map.png');
   background-size: cover;
   background-position: center;
   opacity: 0.35;
