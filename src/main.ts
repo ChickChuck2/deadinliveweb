@@ -50,6 +50,14 @@ const items = [
   { name: "Remédios", effect: "+30 Sanidade", cost: "$20", desc: "Silenciam as vozes, mas nublam a visão." }
 ];
 
+// Future Visions Data
+const futureVisions = [
+  { id: "shopping", title: "Centro Comercial", desc: "Explore lojas de cosméticos e restaurantes. Onde o consumo e a saúde mental se cruzam.", status: "Em Design", icon: "🛍️" },
+  { id: "jobs", title: "Sistema de Trabalho", desc: "Comece servindo café e construa sua independência financeira para sobreviver ao vazio.", status: "Em Planejamento", icon: "☕" },
+  { id: "personality", title: "Personalidade & Hobbies", desc: "Defina os gostos e hábitos de Leah. Cada escolha molda quem ela se tornará.", status: "Em Conceito", icon: "🧠" },
+  { id: "wardrobe", title: "Guarda-Roupa", desc: "Lojas de roupas e customização visual. A aparência como reflexo da alma.", status: "Planejado", icon: "👗" }
+];
+
 // Gallery Data
 const gallery = [
   { src: "images/game/park.jpg", title: "O Parque" },
@@ -275,6 +283,24 @@ const getViewContent = (id: string) => {
                 <h3>${r.phase}</h3>
                 <span class="status-tag ${r.status.toLowerCase().replace(' ', '-')}">${r.status}</span>
                 <p>${r.desc}</p>
+              </div>
+            `).join('')}
+          </div>
+        </section>
+
+        <section id="visions">
+          <div class="section-header">
+            <h2 class="section-title">Visões do Futuro</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle-center">Projeto Inovação: O que ainda está por vir em Dead in Live.</p>
+          </div>
+          <div class="visions-grid">
+            ${futureVisions.map(v => `
+              <div class="vision-card glass-card">
+                <div class="vision-status">${v.status}</div>
+                <div class="vision-icon">${v.icon}</div>
+                <h3>${v.title}</h3>
+                <p>${v.desc}</p>
               </div>
             `).join('')}
           </div>

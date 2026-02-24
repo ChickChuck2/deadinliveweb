@@ -605,6 +605,59 @@ section.visible {
   opacity: 0.6;
 }
 
+/* Future Visions Styling */
+.visions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.vision-card {
+  position: relative;
+  border: 1px dashed rgba(142, 68, 173, 0.3);
+  padding: 50px 30px 40px;
+  text-align: center;
+  transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.vision-card:hover {
+  border-style: solid;
+  border-color: var(--primary);
+  box-shadow: 0 0 30px var(--primary-glow);
+}
+
+.vision-status {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary);
+  opacity: 0.8;
+}
+
+.vision-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px var(--primary-glow));
+}
+
+.vision-card h3 {
+  font-family: var(--font-title);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+}
+
+.vision-card p {
+  font-size: 1rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .hero-title {
