@@ -2,10 +2,10 @@ import './style.css'
 
 // Character Data
 const characters = [
-  { name: "Leah", role: "Protagonista", desc: "A 'menina do cabelo de uva'. Luta contra neblinas mentais e traumas fragmentados.", sprite: "/images/game/leah.png", status: "active" },
-  { name: "Maya", role: "A Luz", desc: "Melhor amiga de infância. Representa a alegria e a inocência do passado.", sprite: "/images/game/maya.png", status: "active" },
-  { name: "Madalena", role: "O Pilar", desc: "Mãe de Leah. Rígida e autoritária, protege segredos sob uma fachada de cuidado.", sprite: "/images/game/madalena.png", status: "active" },
-  { name: "Demetrius", role: "O Silêncio", desc: "Pai de Leah. Rude e indiferente, sua presença é um fardo constante na família.", sprite: "/images/game/demetrius.png", status: "active" },
+  { name: "Leah", role: "Protagonista", desc: "A 'menina do cabelo de uva'. Luta contra neblinas mentais e traumas fragmentados.", sprite: "images/game/leah.png", status: "active" },
+  { name: "Maya", role: "A Luz", desc: "Melhor amiga de infância. Representa a alegria e a inocência do passado.", sprite: "images/game/maya.png", status: "active" },
+  { name: "Madalena", role: "O Pilar", desc: "Mãe de Leah. Rígida e autoritária, protege segredos sob uma fachada de cuidado.", sprite: "images/game/madalena.png", status: "active" },
+  { name: "Demetrius", role: "O Silêncio", desc: "Pai de Leah. Rude e indiferente, sua presença é um fardo constante na família.", sprite: "images/game/demetrius.png", status: "active" },
   { name: "Crystal", role: "A Inveja", desc: "Líder das bullies. Usa o poder para calar suas próprias inseguranças.", sprite: "", status: "placeholder" },
   { name: "Amélie", role: "A Sombra", desc: "Fiel a Crystal. Cruel e oportunista, encontra prazer em diminuir os outros.", sprite: "", status: "placeholder" },
   { name: "Anne", role: "A Dúvida", desc: "Seguidora do trio, mas com lampejos de empatia que não ousa expressar.", sprite: "", status: "placeholder" }
@@ -52,10 +52,10 @@ const items = [
 
 // Gallery Data
 const gallery = [
-  { src: "/images/game/park.jpg", title: "O Parque" },
-  { src: "/images/game/dark_park.jpg", title: "O Parque (Caótico)" },
-  { src: "/images/game/cozinha.png", title: "Cozinha da Família" },
-  { src: "/images/game/main_menu_bg.png", title: "Menu Principal" }
+  { src: "images/game/park.jpg", title: "O Parque" },
+  { src: "images/game/dark_park.jpg", title: "O Parque (Caótico)" },
+  { src: "images/game/cozinha.png", title: "Cozinha da Família" },
+  { src: "images/game/main_menu_bg.png", title: "Menu Principal" }
 ];
 
 /**
