@@ -4,13 +4,13 @@
       <div class="nebula-blob blob-2"></div>
       <div class="nebula-blob blob-3"></div>
       <div id="shards-container"></div>
-    </div>
-    
-    <main class="site-container">
       <div class="background-scenery">
         <img src="images/sakura_tree.png" class="sakura-tree" alt="Sakura Tree">
       </div>
       <div id="petal-rain"></div>
+    </div>
+    
+    <main class="site-container">
       <header class="navbar">
         <div class="nav-logo" onclick="window.location.hash='#home'">Dead in Live</div>
         <button class="mobile-menu-toggle" id="menu-toggle">
@@ -28,7 +28,6 @@
           <a href="#team" class="${s==="team"?"active":""}">Equipe</a>
         </div>
       </nav>
-      <div id="petal-rain"></div>
       <div id="content-mount"></div>
     </main>
   `;e.innerHTML.includes("site-container")||(e.innerHTML=a,S(),A(),D(),j());const o=document.getElementById("content-mount");o.innerHTML=E(s),setTimeout(()=>{document.querySelectorAll("section").forEach(i=>{i.classList.add("visible")})},100)},E=s=>{switch(s){case"gameplay":return`
