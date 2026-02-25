@@ -225,6 +225,28 @@
               <button class="btn-premium" onclick="window.open('game-WEB/index.html', '_blank')">Iniciar Experiência</button>
               <button class="btn-outline" onclick="window.location.hash='#projeto'">Explorar Projeto</button>
             </div>
+
+            <div class="landing-teaser fade-in-up delay-4">
+              <div class="teaser-placeholder">
+                <span class="teaser-label">Teaser Oficial</span>
+                <span class="teaser-status">Em Breve</span>
+              </div>
+            </div>
+
+            <div class="experience-pillars fade-in-up delay-4">
+              <div class="pillar">
+                <span class="pillar-icon">👁️</span>
+                <h3>Horror Psicológico</h3>
+              </div>
+              <div class="pillar">
+                <span class="pillar-icon">🧬</span>
+                <h3>Inovação Narrativa</h3>
+              </div>
+              <div class="pillar">
+                <span class="pillar-icon">📖</span>
+                <h3>Visual Novel</h3>
+              </div>
+            </div>
             
             <div class="platform-targets fade-in-up delay-4">
               <span class="platform-label">Plataformas Alvo:</span>
@@ -233,6 +255,12 @@
                 <span class="platform-tag">📦 Epic Games</span>
                 <span class="platform-tag">📱 Android</span>
               </div>
+            </div>
+
+            <div class="social-community fade-in-up delay-4">
+              <a href="#" class="social-link">Discord</a>
+              <a href="#" class="social-link">Instagram</a>
+              <a href="#" class="social-link">Twitter (X)</a>
             </div>
           </div>
           <div class="scroll-hint fade-in-up delay-4">
