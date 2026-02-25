@@ -1,4 +1,4 @@
-(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))o(i);new MutationObserver(i=>{for(const t of i)if(t.type==="childList")for(const n of t.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&o(n)}).observe(document,{childList:!0,subtree:!0});function a(i){const t={};return i.integrity&&(t.integrity=i.integrity),i.referrerPolicy&&(t.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?t.credentials="include":i.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function o(i){if(i.ep)return;i.ep=!0;const t=a(i);fetch(i.href,t)}})();const m=[{name:"Leah",role:"Protagonista",desc:"A 'menina do cabelo de uva'. Luta contra neblinas mentais e traumas fragmentados.",sprite:"images/game/leah.png",status:"active"},{name:"Maya",role:"A Luz",desc:"Melhor amiga de infância. Representa a alegria e a inocência do passado.",sprite:"images/game/maya.png",status:"active"},{name:"Madalena",role:"O Pilar",desc:"Mãe de Leah. Rígida e autoritária, protege segredos sob uma fachada de cuidado.",sprite:"images/game/madalena.png",status:"active"},{name:"Demetrius",role:"O Silêncio",desc:"Pai de Leah. Rude e indiferente, sua presença é um fardo constante na família.",sprite:"images/game/demetrius.png",status:"active"},{name:"Crystal",role:"A Inveja",desc:"Líder das bullies. Usa o poder para calar suas próprias inseguranças.",sprite:"",status:"placeholder"},{name:"Amélie",role:"A Sombra",desc:"Fiel a Crystal. Cruel e oportunista, encontra prazer em diminuir os outros.",sprite:"",status:"placeholder"},{name:"Anne",role:"A Dúvida",desc:"Seguidora do trio, mas com lampejos de empatia que não ousa expressar.",sprite:"",status:"placeholder"}],l=[{title:"Sistema de Sanidade",desc:"A sanidade de Leah flutua conforme o ambiente. Escolhas ruins aumentam a chance de eventos sombrios. Não deixe ser tarde demais.",icon:"🧠"},{title:"Nível de Felicidade",desc:"Manter a felicidade alta proporciona uma gameplay mais suave. O objetivo final é alcançar a paz, se possível.",icon:"✨"},{title:"Gestão Financeira",desc:"O dinheiro é vital para tratamentos periódicos e remédios controlados. Encontre recursos em bicos ou eventos.",icon:"💰"},{title:"Consequências Reais",desc:"Suas escolhas moldam o caminho. Um erro fatal pode significar o fim da jornada de Leah.",icon:"🎭"}],d={objective:"Seguir a história de Leah, moldando seu caminho através de escolhas que impactam sua mente e o desfecho de sua vida.",challenge:"Enfrentar traumas familiares e transtornos mentais que dificultam a jogabilidade e testam sua resiliência.",uniqueness:"Baseado em experiências reais, aplica uma jogabilidade delicada onde cada ação grotesca ou trauma exige uma reação consciente."},p=[{category:"Engine",value:"Ren'Py 8.1.3 (Python 3.9)"},{category:"Framework Web",value:"Vite + TypeScript"},{category:"Sistemas Custom",value:"Advanced Event Engine & Inventory"},{category:"Inovação",value:"UX Narrativa Baseada em Estados Emocionais"}],v=[{id:"v0.1",title:"A Origem",items:["[Adicionado] Cena jogável inicial","[Adicionado] Sistema de Sanidade & Felicidade","[Adicionado] Sistema de Dinheiro & Eventos"]},{id:"v0.2",title:"Capítulo 2 & Expansão",items:["[Adicionado] Capítulo 2 completo","[Adicionado] Sistema de Mini-Mapa","[Adicionado] Menu do Quarto (Base)","[Modificado] Cursor customizado"]}],u=[{phase:"Capítulo 2",status:"Concluído",desc:"Aprofundamento dos conflitos e exploração do mapa."},{phase:"Sistemas Sonoros",status:"Em Desenvolvimento",desc:"Implementação de trilha de piano e efeitos ambientais."},{phase:"Capítulo 3",status:"Em Planejamento",desc:"O clímax da jornada de superação de Leah."}],h=[{id:"casa",name:"Casa da Leah",desc:"Onde o silêncio de Demetrius e o controle de Madalena se encontram.",icon:"🏠",top:"75%",left:"55%"},{id:"escola",name:"Escola",desc:"O campo de batalha social onde Crystal domina.",icon:"🏫",top:"25%",left:"40%"},{id:"hospital",name:"Hospital",desc:"Lugar de memórias traumáticas e cheiros de éter.",icon:"🏥",top:"15%",left:"65%"},{id:"loja",name:"Loja",desc:"Um breve refúgio para adquirir itens que acalmam a mente.",icon:"🛒",top:"60%",left:"70%"}],g=[{name:"Café Quente",effect:"+10 Felicidade",cost:"$5",desc:"Um pequeno conforto em manhãs frias."},{name:"Diário",effect:"+15 Sanidade",cost:"Inicial",desc:"O único lugar onde Leah pode ser ela mesma."},{name:"Remédios",effect:"+30 Sanidade",cost:"$20",desc:"Silenciam as vozes, mas nublam a visão."}],f=[{id:"shopping",title:"Centro Comercial",desc:"Explore lojas de cosméticos e restaurantes. Onde o consumo e a saúde mental se cruzam.",status:"Em Planejamento",icon:"🛍️"},{id:"jobs",title:"Sistema de Trabalho",desc:"Comece servindo café e construa sua independência financeira para sobreviver ao vazio.",status:"Em Planejamento",icon:"☕"},{id:"personality",title:"Personalidade & Hobbies",desc:"Defina os gostos e hábitos de Leah. Cada escolha molda quem ela se tornará.",status:"Em Planejamento",icon:"🧠"},{id:"wardrobe",title:"Guarda-Roupa",desc:"Lojas de roupas e customização visual. A aparência como reflexo da alma.",status:"Em Planejamento",icon:"👗"}],b=[{src:"images/game/park.jpg",title:"O Parque"},{src:"images/game/dark_park.jpg",title:"O Parque (Caótico)"},{src:"images/game/cozinha.png",title:"Cozinha da Família"},{src:"images/game/main_menu_bg.png",title:"Menu Principal"}],y=[{name:"Carlos Silva",role:"Fundador & Lead Developer",bio:"Gerencia a visão estratégica, planos de inovação e documentação técnica. Responsável pelo desenvolvimento do motor de jogo, arquitetura do site e integração de sistemas essenciais.",specialty:"Gestão, Full-stack Dev & Game Logic"},{name:"Giovana Leite",role:"Diretora Criativa & Roteirista",bio:"Lidera a alma artística de Dead in Live. Desenvolve a narrativa psicológica, roteiros detalhados, direção de arte e ambientação sonora, transformando ideias em experiências imersivas.",specialty:"Narrativa, Audio Design & Ilustração"}],$=s=>{const e=document.querySelector("#app"),a=`
+(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))o(i);new MutationObserver(i=>{for(const t of i)if(t.type==="childList")for(const n of t.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&o(n)}).observe(document,{childList:!0,subtree:!0});function a(i){const t={};return i.integrity&&(t.integrity=i.integrity),i.referrerPolicy&&(t.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?t.credentials="include":i.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function o(i){if(i.ep)return;i.ep=!0;const t=a(i);fetch(i.href,t)}})();const p=[{name:"Leah",role:"Protagonista",desc:"A 'menina do cabelo de uva'. Luta contra neblinas mentais e traumas fragmentados.",sprite:"images/game/leah.png",status:"active"},{name:"Maya",role:"A Luz",desc:"Melhor amiga de infância. Representa a alegria e a inocência do passado.",sprite:"images/game/maya.png",status:"active"},{name:"Madalena",role:"O Pilar",desc:"Mãe de Leah. Rígida e autoritária, protege segredos sob uma fachada de cuidado.",sprite:"images/game/madalena.png",status:"active"},{name:"Demetrius",role:"O Silêncio",desc:"Pai de Leah. Rude e indiferente, sua presença é um fardo constante na família.",sprite:"images/game/demetrius.png",status:"active"},{name:"Crystal",role:"A Inveja",desc:"Líder das bullies. Usa o poder para calar suas próprias inseguranças.",sprite:"",status:"placeholder"},{name:"Amélie",role:"A Sombra",desc:"Fiel a Crystal. Cruel e oportunista, encontra prazer em diminuir os outros.",sprite:"",status:"placeholder"},{name:"Anne",role:"A Dúvida",desc:"Seguidora do trio, mas com lampejos de empatia que não ousa expressar.",sprite:"",status:"placeholder"}],l=[{title:"Sistema de Sanidade",desc:"A sanidade de Leah flutua conforme o ambiente. Escolhas ruins aumentam a chance de eventos sombrios. Não deixe ser tarde demais.",icon:"🧠"},{title:"Nível de Felicidade",desc:"Manter a felicidade alta proporciona uma gameplay mais suave. O objetivo final é alcançar a paz, se possível.",icon:"✨"},{title:"Gestão Financeira",desc:"O dinheiro é vital para tratamentos periódicos e remédios controlados. Encontre recursos em bicos ou eventos.",icon:"💰"},{title:"Consequências Reais",desc:"Suas escolhas moldam o caminho. Um erro fatal pode significar o fim da jornada de Leah.",icon:"🎭"}],d={objective:"Seguir a história de Leah, moldando seu caminho através de escolhas que impactam sua mente e o desfecho de sua vida.",challenge:"Enfrentar traumas familiares e transtornos mentais que dificultam a jogabilidade e testam sua resiliência.",uniqueness:"Baseado em experiências reais, aplica uma jogabilidade delicada onde cada ação grotesca ou trauma exige uma reação consciente."},v=[{category:"Engine",value:"Ren'Py 8.1.3 (Python 3.9)"},{category:"Framework Web",value:"Vite + TypeScript"},{category:"Sistemas Custom",value:"Advanced Event Engine & Inventory"},{category:"Inovação",value:"UX Narrativa Baseada em Estados Emocionais"}],u=[{id:"v0.1",title:"A Origem",items:["[Adicionado] Cena jogável inicial","[Adicionado] Sistema de Sanidade & Felicidade","[Adicionado] Sistema de Dinheiro & Eventos"]},{id:"v0.2",title:"Capítulo 2 & Expansão",items:["[Adicionado] Capítulo 2 completo","[Adicionado] Sistema de Mini-Mapa","[Adicionado] Menu do Quarto (Base)","[Modificado] Cursor customizado"]}],h=[{phase:"Capítulo 2",status:"Concluído",desc:"Aprofundamento dos conflitos e exploração do mapa."},{phase:"Sistemas Sonoros",status:"Em Desenvolvimento",desc:"Implementação de trilha de piano e efeitos ambientais."},{phase:"Capítulo 3",status:"Em Planejamento",desc:"O clímax da jornada de superação de Leah."}],g=[{id:"casa",name:"Casa da Leah",desc:"Onde o silêncio de Demetrius e o controle de Madalena se encontram.",icon:"🏠",top:"75%",left:"55%"},{id:"escola",name:"Escola",desc:"O campo de batalha social onde Crystal domina.",icon:"🏫",top:"25%",left:"40%"},{id:"hospital",name:"Hospital",desc:"Lugar de memórias traumáticas e cheiros de éter.",icon:"🏥",top:"15%",left:"65%"},{id:"loja",name:"Loja",desc:"Um breve refúgio para adquirir itens que acalmam a mente.",icon:"🛒",top:"60%",left:"70%"}],f=[{name:"Café Quente",effect:"+10 Felicidade",cost:"$5",desc:"Um pequeno conforto em manhãs frias."},{name:"Diário",effect:"+15 Sanidade",cost:"Inicial",desc:"O único lugar onde Leah pode ser ela mesma."},{name:"Remédios",effect:"+30 Sanidade",cost:"$20",desc:"Silenciam as vozes, mas nublam a visão."}],b=[{id:"shopping",title:"Centro Comercial",desc:"Explore lojas de cosméticos e restaurantes. Onde o consumo e a saúde mental se cruzam.",status:"Em Planejamento",icon:"🛍️"},{id:"jobs",title:"Sistema de Trabalho",desc:"Comece servindo café e construa sua independência financeira para sobreviver ao vazio.",status:"Em Planejamento",icon:"☕"},{id:"personality",title:"Personalidade & Hobbies",desc:"Defina os gostos e hábitos de Leah. Cada escolha molda quem ela se tornará.",status:"Em Planejamento",icon:"🧠"},{id:"wardrobe",title:"Guarda-Roupa",desc:"Lojas de roupas e customização visual. A aparência como reflexo da alma.",status:"Em Planejamento",icon:"👗"}],y=[{src:"images/game/park.jpg",title:"O Parque"},{src:"images/game/dark_park.jpg",title:"O Parque (Caótico)"},{src:"images/game/cozinha.png",title:"Cozinha da Família"},{src:"images/game/main_menu_bg.png",title:"Menu Principal"}],$=[{name:"Carlos Silva",role:"Fundador & Lead Developer",bio:"Gerencia a visão estratégica, planos de inovação e documentação técnica. Responsável pelo desenvolvimento do motor de jogo, arquitetura do site e integração de sistemas essenciais.",specialty:"Gestão, Full-stack Dev & Game Logic"},{name:"Giovana Leite",role:"Diretora Criativa & Roteirista",bio:"Lidera a alma artística de Dead in Live. Desenvolve a narrativa psicológica, roteiros detalhados, direção de arte e ambientação sonora, transformando ideias em experiências imersivas.",specialty:"Narrativa, Audio Design & Ilustração"}],L=s=>{const e=document.querySelector("#app"),a=`
     <div class="void-container">
       <div class="nebula-blob blob-1"></div>
       <div class="nebula-blob blob-2"></div>
@@ -7,7 +7,11 @@
     </div>
     
     <main class="site-container">
-      <nav class="navbar">
+      <div class="background-scenery">
+        <img src="images/sakura_tree.png" class="sakura-tree" alt="Sakura Tree">
+      </div>
+      <div id="petal-rain"></div>
+      <header class="navbar">
         <div class="nav-logo" onclick="window.location.hash='#home'">Dead in Live</div>
         <button class="mobile-menu-toggle" id="menu-toggle">
           <span></span>
@@ -27,7 +31,7 @@
       <div id="petal-rain"></div>
       <div id="content-mount"></div>
     </main>
-  `;e.innerHTML.includes("site-container")||(e.innerHTML=a,j(),S(),D(),E());const o=document.getElementById("content-mount");o.innerHTML=L(s),setTimeout(()=>{document.querySelectorAll("section").forEach(i=>{i.classList.add("visible")})},100)},L=s=>{switch(s){case"gameplay":return`
+  `;e.innerHTML.includes("site-container")||(e.innerHTML=a,S(),A(),D(),j());const o=document.getElementById("content-mount");o.innerHTML=E(s),setTimeout(()=>{document.querySelectorAll("section").forEach(i=>{i.classList.add("visible")})},100)},E=s=>{switch(s){case"gameplay":return`
         <section class="sub-page">
           <div class="section-header">
             <h1 class="section-title">Gameplay Detalhada</h1>
@@ -51,7 +55,7 @@
             <h2 class="section-title" style="font-size: 3rem;">Inventário de Emoções</h2>
           </div>
           <div class="inventory-grid">
-            ${g.map(e=>`
+            ${f.map(e=>`
               <div class="item-card glass-card">
                 <h3>${e.name}</h3>
                 <span class="item-effect">${e.effect}</span>
@@ -73,7 +77,7 @@
             <div class="tech-dashboard glass-card">
               <h3>Stack de Desenvolvimento</h3>
               <ul class="tech-list">
-                ${p.map(e=>`<li><strong>${e.category}:</strong> ${e.value}</li>`).join("")}
+                ${v.map(e=>`<li><strong>${e.category}:</strong> ${e.value}</li>`).join("")}
               </ul>
             </div>
             <div class="tech-docs glass-card">
@@ -94,7 +98,7 @@
             <p class="section-subtitle-center">As mentes por trás da reconstrução de Leah.</p>
           </div>
           <div class="team-showcase">
-            ${y.map(e=>`
+            ${$.map(e=>`
               <div class="team-card-premium glass-card">
                 <div class="member-symbol">${e.name.charAt(0)}</div>
                 <div class="member-content">
@@ -118,7 +122,7 @@
           </div>
           <div class="map-container glass-card">
             <div class="map-bg"></div>
-            ${h.map(e=>`
+            ${g.map(e=>`
               <div class="map-point" style="top: ${e.top}; left: ${e.left};" data-tooltip="${e.desc}">
                 <span class="point-icon">${e.icon}</span>
                 <span class="point-name">${e.name}</span>
@@ -133,7 +137,7 @@
             <div class="title-underline"></div>
           </div>
           <div class="gallery-grid">
-            ${b.map(e=>`
+            ${y.map(e=>`
               <div class="gallery-item glass-card">
                 <img src="${e.src}" alt="${e.title}">
                 <div class="gallery-overlay">
@@ -156,7 +160,7 @@
               <h2 class="section-title">Roadmap</h2>
             </div>
             <div class="roadmap-timeline">
-              ${u.map(e=>`
+              ${h.map(e=>`
                 <div class="roadmap-item glass-card">
                   <h3>${e.phase}</h3>
                   <span class="status-tag ${e.status.toLowerCase().replace(" ","-")}">${e.status}</span>
@@ -171,7 +175,7 @@
               <h2 class="section-title">Visões do Futuro</h2>
             </div>
             <div class="visions-grid">
-              ${f.map(e=>`
+              ${b.map(e=>`
                 <div class="vision-card glass-card">
                   <div class="vision-status">${e.status}</div>
                   <div class="vision-icon">${e.icon}</div>
@@ -187,7 +191,7 @@
               <h2 class="section-title">O Elenco</h2>
             </div>
             <div class="character-grid">
-              ${m.map(e=>`
+              ${p.map(e=>`
                 <div class="character-card">
                   <div class="char-img-wrap">
                     ${e.status==="placeholder"?'<div class="coming-soon">Visual em breve</div>':""}
@@ -215,7 +219,7 @@
         <section id="home" class="landing-section">
           <div class="landing-content">
             <h1 class="landing-title">
-              <span class="fade-in-up">Dead In</span><br>
+              <span class="fade-in-up">Dead In</span>
               <span class="highlight-text fade-in-up delay-1">Live</span>
             </h1>
             <p class="landing-subtitle fade-in-up delay-2">
@@ -223,7 +227,7 @@
               Vivencie o horror psicológico através dos olhos de Leah.
             </p>
             <div class="landing-cta fade-in-up delay-3">
-              <button class="btn-premium" onclick="window.open('game-WEB/index.html', '_blank')">Iniciar Experiência Now</button>
+              <button class="btn-premium" onclick="window.open('game-WEB/index.html', '_blank')">Iniciar Experiência Agora</button>
               <button class="btn-outline" onclick="window.location.hash='#projeto'">Explorar Projeto</button>
             </div>
             
@@ -308,7 +312,7 @@
             <div class="title-underline"></div>
           </div>
           <div class="versions-timeline">
-            ${v.map(e=>`
+            ${u.map(e=>`
               <div class="version-block glass-card">
                 <div class="version-id">${e.id}</div>
                 <h3>${e.title}</h3>
@@ -333,4 +337,4 @@
             </div>
           </div>
         </section>
-      `}},E=()=>{const s=document.getElementById("petal-rain");if(!s)return;const e=()=>{const a=document.createElement("div");a.className="petal";const o=Math.random()*10+5+"px",i=Math.random()*100+"vw",t=Math.random()*5+5+"s",n=Math.random()*5+"s";a.style.width=o,a.style.height=o,a.style.left=i,a.style.animationDuration=t,a.style.animationDelay=n,s.appendChild(a),setTimeout(()=>{a.remove()},1e4)};for(let a=0;a<20;a++)e();setInterval(e,400)},j=()=>{const s=document.getElementById("shards-container");if(s)for(let e=0;e<4;e++){const a=document.createElement("div");a.className="shard";const o=Math.random()*300+100,i=Math.random()*300+100;a.style.width=`${o}px`,a.style.height=`${i}px`,a.style.left=`${Math.random()*100}%`,a.style.top=`${Math.random()*100}%`,a.style.opacity=`${Math.random()*.1+.05}`,a.dataset.depth=(Math.random()*.1+.05).toString(),s.appendChild(a)}},S=()=>{let s=!1;window.addEventListener("scroll",()=>{s||(window.requestAnimationFrame(()=>{const e=window.scrollY,a=document.querySelector(".navbar");a&&(e>50?a.style.background="rgba(5, 5, 8, 0.9)":a.style.background="rgba(5, 5, 8, 0.4)"),document.querySelectorAll(".shard").forEach(t=>{const n=t,c=parseFloat(n.dataset.depth||"0.1");n.style.transform=`translate3d(0, ${e*c}px, 0) rotate(45deg)`}),document.querySelectorAll(".nebula-blob").forEach((t,n)=>{const c=t;c.style.transform=`translate3d(0, ${e*(.05+n*.03)}px, 0)`}),s=!1}),s=!0)})},D=()=>{const s=document.getElementById("menu-toggle"),e=document.getElementById("nav-links");!s||!e||(s.addEventListener("click",()=>{s.classList.toggle("active"),e.classList.toggle("active")}),e.querySelectorAll("a").forEach(a=>{a.addEventListener("click",()=>{s.classList.remove("active"),e.classList.remove("active")})}))},r=()=>{const s=window.location.hash.replace("#","")||"home";$(s),window.scrollTo(0,0);const e=document.getElementById("menu-toggle"),a=document.getElementById("nav-links");e&&a&&(e.classList.remove("active"),a.classList.remove("active"))};window.addEventListener("hashchange",r);window.addEventListener("load",r);
+      `}},j=()=>{const s=document.getElementById("petal-rain");if(!s)return;const e=()=>{const a=document.createElement("div");a.className="petal";const o=Math.random()*8+4+"px",i=Math.random()>.6,n=(i?Math.random()*30:Math.random()*100)+"vw",c=Math.random()*7+6+"s",m=Math.random()*5+"s";a.style.width=o,a.style.height=o,a.style.left=n,a.style.top=i?Math.random()*40-10+"%":"-10%",a.style.animationDuration=c,a.style.animationDelay=m,s.appendChild(a),setTimeout(()=>{a.remove()},1e4)};for(let a=0;a<20;a++)e();setInterval(e,400)},S=()=>{const s=document.getElementById("shards-container");if(s)for(let e=0;e<4;e++){const a=document.createElement("div");a.className="shard";const o=Math.random()*300+100,i=Math.random()*300+100;a.style.width=`${o}px`,a.style.height=`${i}px`,a.style.left=`${Math.random()*100}%`,a.style.top=`${Math.random()*100}%`,a.style.opacity=`${Math.random()*.1+.05}`,a.dataset.depth=(Math.random()*.1+.05).toString(),s.appendChild(a)}},A=()=>{let s=!1;window.addEventListener("scroll",()=>{s||(window.requestAnimationFrame(()=>{const e=window.scrollY,a=document.querySelector(".navbar");a&&(e>50?a.style.background="rgba(5, 5, 8, 0.9)":a.style.background="rgba(5, 5, 8, 0.4)"),document.querySelectorAll(".shard").forEach(t=>{const n=t,c=parseFloat(n.dataset.depth||"0.1");n.style.transform=`translate3d(0, ${e*c}px, 0) rotate(45deg)`}),document.querySelectorAll(".nebula-blob").forEach((t,n)=>{const c=t;c.style.transform=`translate3d(0, ${e*(.05+n*.03)}px, 0)`}),s=!1}),s=!0)})},D=()=>{const s=document.getElementById("menu-toggle"),e=document.getElementById("nav-links");!s||!e||(s.addEventListener("click",()=>{s.classList.toggle("active"),e.classList.toggle("active")}),e.querySelectorAll("a").forEach(a=>{a.addEventListener("click",()=>{s.classList.remove("active"),e.classList.remove("active")})}))},r=()=>{const s=window.location.hash.replace("#","")||"home";L(s),window.scrollTo(0,0);const e=document.getElementById("menu-toggle"),a=document.getElementById("nav-links");e&&a&&(e.classList.remove("active"),a.classList.remove("active"))};window.addEventListener("hashchange",r);window.addEventListener("load",r);
