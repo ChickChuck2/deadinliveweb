@@ -7,7 +7,7 @@
     </div>
     
     <main class="site-container">
-      <header class="navbar">
+      <nav class="navbar">
         <div class="nav-logo" onclick="window.location.hash='#home'">Dead in Live</div>
         <button class="mobile-menu-toggle" id="menu-toggle">
           <span></span>
