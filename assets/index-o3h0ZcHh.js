@@ -252,7 +252,7 @@
           <div class="section-header">
             <h2 class="section-title">O Conceito</h2>
             <div class="title-underline"></div>
-            <p class="section-subtitle-center">Lutando contra o invisível.</p>
+            <p class="section-subtitle-center"></p>
           </div>
           <div class="concept-grid">
             <div class="concept-card glass-card">
